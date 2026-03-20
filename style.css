@@ -1,0 +1,113 @@
+:root {
+    --bg-color: #f4f7f9;
+    --white: #ffffff;
+    --accent-dark: #2c3e50; /* Professional Dark Blue */
+    --accent-blue: #3498db; /* Clear Blue */
+    --text-color: #333;
+    --font-main: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-main);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.resume-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--bg-color);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: var(--accent-dark);
+    margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 2px;
+}
+
+.contact-info, .links-info {
+    font-size: 0.9em;
+    margin-top: 8px;
+    color: #555;
+}
+
+.icon {
+    margin-right: 5px;
+    color: var(--accent-blue);
+}
+
+.section-title {
+    background-color: var(--accent-dark);
+    color: white;
+    padding: 8px 15px;
+    font-size: 1.1em;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.content-p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.skill-item h3 {
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: var(--accent-dark);
+}
+
+.skill-icon { margin-right: 10px; }
+
+ul { list-style: none; padding: 0; }
+li { font-size: 0.9em; margin-bottom: 5px; display: flex; align-items: center; }
+.bullet { font-size: 0.7em; margin-right: 10px; color: var(--accent-blue); }
+
+.project-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 3px solid var(--accent-blue);
+}
+
+.project-url {
+    font-size: 0.85em;
+    color: var(--accent-blue);
+    margin: 2px 0 8px 30px;
+}
+
+.edu-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.edu-logo {
+    font-size: 2em;
+    color: var(--accent-dark);
+    margin-right: 20px;
+}
+
+.edu-details h3 { margin: 0; font-size: 1.1em; }
+.edu-details p { margin: 2px 0 10px 0; color: #666; font-size: 0.9em; }
